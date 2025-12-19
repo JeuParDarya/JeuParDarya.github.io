@@ -1,2 +1,43 @@
-Jeu en construction...
-!!!!
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Jeu du mot secret</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top-bar">
+    <div class="name">Mot Secret</div>
+  </header>
+  
+<main class="wrapper">
+      <div class="logo">
+        <img src="https://raw.githubusercontent.com/JeuParDarya/JeuParDarya.github.io/refs/heads/main/motSecretLogo.png" alt="" width="300" class="image">
+      </div>
+</main>
+
+  <footer class="bottom-bar">
+    <form>
+    <label for="username">Nom d'utilisateur:</label>
+    <input type="text" id="username">
+    
+    <br><br>
+
+    <input type="button" id="btnEnter" value="Enter">
+
+
+  </footer>
+  
+  <script>
+document.getElementById("btnEnter").addEventListener("click", function(event) {
+  event.preventDefault();
+  const username = document.getElementById("username").value.trim() || "Joueur";
+  localStorage.setItem('username', username);
+  window.location.href = "levels.html";
+});
+</script>
+</body>
+</html>
+
+
+
