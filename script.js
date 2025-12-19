@@ -1,3 +1,4 @@
+// Des codes son de w3 schools et des notes de cours 
 // Mots de Noël possible
 const motsNoel = [
   "NOEL",
@@ -164,3 +165,4 @@ btnReset.addEventListener("click", function (event) {
 });
 
 resetGame();
+
